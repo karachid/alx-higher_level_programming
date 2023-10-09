@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Defines the inherits_from function
+Contains the inherits_from function
 """
 
 
