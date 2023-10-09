@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
-Contains the function is_same_class
+Contains the is_kind_of_class function
 """
 
 
-def is_same_class(obj, a_class):
-    """Returns true if obj is the exact class a_class, otherwise false"""
-    return (type(obj) == a_class)
+def is_kind_of_class(obj, a_class):
+    """True if obj is an instance or inherited from a_class, else False"""
+    return (isinstance(obj, a_class))
