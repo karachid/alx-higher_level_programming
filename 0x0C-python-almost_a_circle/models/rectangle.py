@@ -7,7 +7,7 @@ class Rectangle(Base):
     """Represents a rectangle instance"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initialize a new Rectangle
+        """Initializes a new Rectangle instance
         Args:
             width (int): The width of the new Rectangle
             height (int): The height of the new Rectangle
@@ -81,3 +81,7 @@ class Rectangle(Base):
         if ny < 0:
             raise ValueError("y must be >= 0")
         self.__y = ny
+
+    def area(self):
+        """"Calculates the area of a Rectangle """
+        return self.__width * self.__height
