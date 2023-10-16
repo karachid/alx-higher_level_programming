@@ -32,7 +32,7 @@ class Base:
             return "[]"
         return json.dumps(list_dictionaries)
     
-    @staticmethod
+    @classmethod
     def save_to_file(cls, list_objs):
         """Writes the JSON of a list of objects to a file
         Args:
@@ -45,4 +45,3 @@ class Base:
             else:
                 list_dicts = [o.to_dictionary() for o in list_objs]
                 jsonfile.write(Base.to_json_string(list_dicts))
-
