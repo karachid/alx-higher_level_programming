@@ -14,7 +14,6 @@ class Base:
 
     def __init__(self, id=None):
         """ Initializes a new instance 
-        
         Args:
             id (int): Id Id of the new instance.
         """
