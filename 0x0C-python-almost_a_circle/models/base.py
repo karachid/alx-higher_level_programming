@@ -4,6 +4,7 @@ import json
 import csv
 import turtle
 
+
 class Base:
     """Declares the Base class
     Acts as the "base" for all other classes in the project
@@ -13,11 +14,11 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """ Initializes a new instance 
+        """ Initializes a new instance
         Args:
             id (int): Id Id of the new instance.
         """
-        if id != None:
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
@@ -32,7 +33,7 @@ class Base:
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         return json.dumps(list_dictionaries)
-    
+
     @classmethod
     def save_to_file(cls, list_objs):
         """Writes the JSON of a list of objects to a file
